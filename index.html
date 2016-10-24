@@ -1,26 +1,21 @@
 <html ng-app="myApp" ng-controller="myCtrl">
-	<head>
-		<title>Test map</title>
-		<script type="text/javascript"
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwnF5ruebl698FdovhI5WrxPZu2fDPk7U&sensor=false">
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-		<script src="app.js"></script>
-		<style>
-			#map-canvas{
-				height:400px;
-				width:700px;
-				border:2px solid red;
-			}
-		</style>
-	</head>
-	<body>
+
+<head>
+	<title>Test map</title> 
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="app.js"></script> 
+</head>
+<body>
 	<div style='padding: 50px'>
 		<p>Address to lookup: <input type="text" ng-model="address" size="55"><button ng-click="go()"> go </button></p>
 		
 		<p>Maps will navigate to {{address}}</p>
 		<p>Latitude of address adobe is: {{location.lat}}</p>
-		<p>Longtitude of address adobe is: {{location.lng}}</p>		
-	</div>
+		<p>Longtitude of address adobe is: {{location.lng}}</p>		 
 
-	</body> 
+		<br>
+		<button ng-click="put('ucla')">ucla</button>
+		<button ng-click="put('pasadena city hall')">pasadena city hall</button>
+		<button ng-click="put('Toledo')">Toledo</button>  
+	</div> 
+</body> 
